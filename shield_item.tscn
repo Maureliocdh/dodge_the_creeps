@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dsiy3rq0pmusk"]
+
+[ext_resource type="Script" uid="uid://c24eemullfv4c" path="res://shield_item.gd" id="1_i43of"]
+[ext_resource type="Texture2D" uid="uid://di2emys8m0dnb" path="res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png" id="2_thm2t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d5r0g"]
+radius = 19.026299
+
+[node name="ShieldItem" type="Area2D" unique_id=1408465021]
+z_index = 10
+script = ExtResource("1_i43of")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1679051136]
+position = Vector2(0.9999962, -1.0000038)
+scale = Vector2(0.111, 0.113)
+texture = ExtResource("2_thm2t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=618954843]
+shape = SubResource("CircleShape2D_d5r0g")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
