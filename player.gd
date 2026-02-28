@@ -1,7 +1,7 @@
 extends Area2D
 
 signal hit
-
+@export var bullet_scene: PackedScene
 @export var speed = 400 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
 
@@ -41,7 +41,29 @@ func _process(delta):
 			rotation = PI
 		else:
 			rotation = 0
+			
+	if Input.is_action_just_pressed("ui_accept"):
+		shoot()
 
+func shoot():
+	if bullet_scene:
+		var bala = bullet_scene.instantiate()
+		get_parent().add_child(bala)
+		bala.position = position
+		
+		# Usamos la rotación actual del jugador para calcular la dirección
+		# Vector2.UP.rotated(rotation) toma el vector "arriba" y lo gira lo que diga el jugador
+		var spawn_direction = Vector2.UP.rotated(rotation)
+		
+		# Si el personaje está mirando a la izquierda (flip_h), forzamos dirección izquierda
+		if $AnimatedSprite2D.animation == &"right" and $AnimatedSprite2D.flip_h:
+			spawn_direction = Vector2.LEFT
+		elif $AnimatedSprite2D.animation == &"right" and not $AnimatedSprite2D.flip_h:
+			spawn_direction = Vector2.RIGHT
+
+		bala.direction = spawn_direction
+		# Rotamos la bala para que apunte a donde va
+		bala.rotation = spawn_direction.angle() + PI/2
 
 func start(pos):
 	position = pos

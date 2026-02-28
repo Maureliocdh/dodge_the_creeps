@@ -72,6 +72,13 @@ func _on_powerup_timer_timeout() -> void:
 	pass # Replace with function body.
 
 
+func _input(event):
+	# Si presionas la tecla ESC o P
+	if event.is_action_pressed("ui_cancel") or Input.is_key_pressed(KEY_P):
+		var estado_actual = get_tree().paused
+		get_tree().paused = !estado_actual # Cambia de pausa a juego y viceversa
+		$CanvasLayer/menupausa.visible = !estado_actual # Muestra u oculta el fondo negro
+		
 func _on_player_hit() -> void:
 	game_over()
 	$PowerupTimer.stop()

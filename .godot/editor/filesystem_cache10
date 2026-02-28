@@ -1,17 +1,20 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771711397
+::res://::1772251584
+export_presets.cfg::TextFile::-1::1772251584::0::1::::<><><>0<>0<><>::
 hud.gd::GDScript::194471105334324705::1771098031::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene::4149710412387755562::1771651507::0::1::::<><><>0<>0<><>::uid://c1g57034r2c0::::res://hud.gd<>uid://bgv586r20ps8e::::res://fonts/Xolonium-Regular.ttf
 icon.webp::CompressedTexture2D::7531548479175478893::1771098031::1771098159::1::::<><><>0<>0<>89dbd4114660f33d244eb0b1cb007814<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
-main.gd::GDScript::6854943129266487135::1771696322::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::2820547996718400564::1771696328::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://dsiy3rq0pmusk::::res://shield_item.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
+main.gd::GDScript::6854943129266487135::1771711981::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::2820547996718400564::1772251151::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://dsiy3rq0pmusk::::res://shield_item.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
 mob.gd::GDScript::6489762662277065615::1771098031::0::1::::<>RigidBody2D<><>0<>0<><>::
-mob.tscn::PackedScene::4803497694852229190::1771650452::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://bx2m0x7dnkpiy::::res://art/zombie1.png<>uid://bdtjj24vquccl::::res://art/zombie.png
-player.gd::GDScript::2214551732908234285::1771696565::0::1::::<>Area2D<><>0<>0<><>::
-player.tscn::PackedScene::3945712224003678091::1771696807::0::1::::<><><>0<>0<><>::uid://6s0lxctks3qn::::res://player.gd<>uid://bmn6ic7b4jt38::::res://art/player1.png<>uid://c07m2v4gxttfi::::res://art/player2.png<>uid://di2emys8m0dnb::::res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png
+mob.tscn::PackedScene::4803497694852229190::1772250822::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://bx2m0x7dnkpiy::::res://art/zombie1.png<>uid://bdtjj24vquccl::::res://art/zombie.png
+player.gd::GDScript::2214551732908234285::1772250732::0::1::::<>Area2D<><>0<>0<><>::
+player.tscn::PackedScene::3945712224003678091::1772249930::0::1::::<><><>0<>0<><>::uid://6s0lxctks3qn::::res://player.gd<>uid://bmn6ic7b4jt38::::res://art/player1.png<>uid://b52sv8h3n1gyj::::res://bala.tscn<>uid://c07m2v4gxttfi::::res://art/player2.png<>uid://di2emys8m0dnb::::res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png
+bala.tscn::PackedScene::4548956345110265265::1772250906::0::1::::<><><>0<>0<><>::uid://d3kncqgyqxlvv::::res://bala.gd<>uid://be8lyb41h4e31::::res://art/unnamed__2_-removebg-preview.png
+bala.gd::GDScript::9145987193733759299::1772250903::0::1::::<>Area2D<><>0<>0<><>::
 shield_item.gd::GDScript::6728057773318496616::1771696698::0::1::::<>Area2D<><>0<>0<><>::
 shield_item.tscn::PackedScene::8440684387422345646::1771695636::0::1::::<><><>0<>0<><>::uid://c24eemullfv4c::::res://shield_item.gd<>uid://di2emys8m0dnb::::res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png
-::res://art/::1771692823
+::res://art/::1772248836
 enemy.webp::CompressedTexture2D::3201123376184399409::1771376099::1771376100::1::::<><><>0<>0<>fa48f130b645994508f6a3a375f06941<>res://.godot/imported/enemy.webp-25b006d01d68500b3d75d7be96a3851d.ctex::
 enemyFlyingAlt_1.png::CompressedTexture2D::8591871734993922534::1771098031::1771098159::1::::<><><>0<>0<>650749222ecc9691b88ce09dfe35343a<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
 enemyFlyingAlt_2.png::CompressedTexture2D::1516356722508602582::1771098031::1771098159::1::::<><><>0<>0<>076f439d90bc94ffdc3808c03a70f7f8<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::
@@ -28,9 +31,14 @@ playerGrey_up1.png::CompressedTexture2D::2557089158466942804::1771098031::177109
 playerGrey_up2.png::CompressedTexture2D::8761926712079965083::1771098031::1771098159::1::::<><><>0<>0<>cf62aed9321e051b29cd7b03ffe65943<>res://.godot/imported/playerGrey_up2.png-d6aba85f5f2675ebc7045efa7552ee79.ctex::
 playerGrey_walk1.png::CompressedTexture2D::4282379519085656164::1771098031::1771098159::1::::<><><>0<>0<>bec7e7d55461334bb93489e9e26e904e<>res://.godot/imported/playerGrey_walk1.png-c4773fe7a7bf85d7ab732eb4458c2742.ctex::
 playerGrey_walk2.png::CompressedTexture2D::7389295179821524319::1771098031::1771098159::1::::<><><>0<>0<>64304f63cc8c047892c0c5640a3655e9<>res://.godot/imported/playerGrey_walk2.png-34d2d916366100182d08037c51884043.ctex::
+unnamed__2_-removebg-preview.png::CompressedTexture2D::2736011368617850810::1772248836::1772248836::1::::<><><>0<>0<>b411d2dd0891aefda7389a85a063725b<>res://.godot/imported/unnamed__2_-removebg-preview.png-873aced51ffda0a7b6b6c007ad5397e1.ctex::
 zombie1.png::CompressedTexture2D::4057276793113163748::1771650280::1771650292::1::::<><><>0<>0<>6ff0cf8bbc94641fa2b752efd3be1801<>res://.godot/imported/zombie1.png-8c4144998ce51d1e30a6a8bb48b35cfc.ctex::
 zombie.png::CompressedTexture2D::2636774380920471895::1771650198::1771650210::1::::<><><>0<>0<>de52b551f13c2e9b34592cd37343f1dc<>res://.godot/imported/zombie.png-048e196a90734d759271e6abf129bcc9.ctex::
 ::res://fonts/::1771098159
 FONTLOG.txt::TextFile::-1::1771098031::0::1::::<><><>0<>0<><>::
 LICENSE.txt::TextFile::-1::1771098031::0::1::::<><><>0<>0<><>::
 Xolonium-Regular.ttf::FontFile::2852787775084712022::1771098031::1771098159::1::::<><><>0<>0<>8c2ab1ff5bef22361d2c83fdd500a4d3<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
+::res://web_buiding/::1772251584
+index.apple-touch-icon.png::CompressedTexture2D::5345285248163599351::1772251584::1772251591::1::::<><><>0<>0<>b529a79c2d898ac667e7a8602510824a<>res://.godot/imported/index.apple-touch-icon.png-85657fe73e1db032896b81310a207b4d.ctex::
+index.icon.png::CompressedTexture2D::1014843987973261459::1772251583::1772251591::1::::<><><>0<>0<>3b45e40ff6c179b8733cd91549a51182<>res://.godot/imported/index.icon.png-56703ed7e90199a59a9b757af4ba2436.ctex::
+index.png::CompressedTexture2D::2806686950724044054::1772251583::1772251591::1::::<><><>0<>0<>3c935e3ee31e29b82915dc7f4903cda1<>res://.godot/imported/index.png-02ac2245f986d72e84d4e277fbd1225d.ctex::

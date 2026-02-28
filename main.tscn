@@ -15,6 +15,7 @@ _data = {
 point_count = 5
 
 [node name="Main" type="Node" unique_id=1975992027]
+process_mode = 3
 script = ExtResource("1_0r6n5")
 shield_scene = ExtResource("2_272bh")
 mob_scene = ExtResource("2_50pww")
@@ -25,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(6.016344e-08, 0.41622877, 0.14609936, 1)
+color = Color(0.22724131, 0.38059342, 0.2980334, 1)
 
 [node name="Player" parent="." unique_id=927660131 instance=ExtResource("3_veqnc")]
 
@@ -57,6 +58,24 @@ stream = ExtResource("6_hp1r0")
 
 [node name="PowerupTimer" type="Timer" parent="." unique_id=1304518394]
 wait_time = 3.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=876524029]
+
+[node name="menupausa" type="ColorRect" parent="CanvasLayer" unique_id=347966218]
+process_mode = 3
+visible = false
+offset_right = 479.0
+offset_bottom = 731.0
+color = Color(0, 0, 0, 0.5803922)
+
+[node name="pausa" type="Label" parent="CanvasLayer/menupausa" unique_id=1650823267]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 197.0
+offset_right = 304.0
+offset_bottom = 249.0
+text = "PAUSA"
+horizontal_alignment = 1
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]

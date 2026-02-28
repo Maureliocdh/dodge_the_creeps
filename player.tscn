@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://6s0lxctks3qn" path="res://player.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bmn6ic7b4jt38" path="res://art/player1.png" id="2_hqtel"]
+[ext_resource type="PackedScene" uid="uid://b52sv8h3n1gyj" path="res://bala.tscn" id="2_sweqy"]
 [ext_resource type="Texture2D" uid="uid://c07m2v4gxttfi" path="res://art/player2.png" id="3_sweqy"]
 [ext_resource type="Texture2D" uid="uid://di2emys8m0dnb" path="res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png" id="4_hqtel"]
 
@@ -55,6 +56,7 @@ color_ramp = SubResource("4")
 [node name="Player" type="Area2D" unique_id=1656881339]
 z_index = 10
 script = ExtResource("1")
+bullet_scene = ExtResource("2_sweqy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=996382121]
 position = Vector2(-2, -5)

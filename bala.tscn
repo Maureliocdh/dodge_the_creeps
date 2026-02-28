@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b52sv8h3n1gyj"]
+
+[ext_resource type="Script" uid="uid://d3kncqgyqxlvv" path="res://bala.gd" id="1_ag3k0"]
+[ext_resource type="Texture2D" uid="uid://be8lyb41h4e31" path="res://art/unnamed__2_-removebg-preview.png" id="2_tqo1u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t4wd0"]
+radius = 11.0
+height = 34.0
+
+[node name="Bala" type="Area2D" unique_id=1558918149]
+script = ExtResource("1_ag3k0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1722788492]
+position = Vector2(4, 1)
+scale = Vector2(0.04955621, 0.06978317)
+texture = ExtResource("2_tqo1u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1850167704]
+position = Vector2(4, 1)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_t4wd0")
+debug_color = Color(1.0588765e-06, 0.59451956, 0.7323604, 0.41960785)
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1641068103]
+position = Vector2(1, 1)
+rect = Rect2(-10, -10, 26, 19)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
