@@ -57,5 +57,15 @@ text = "GO!!"
 [node name="MessageTimer" type="Timer" parent="." unique_id=1753325667]
 one_shot = true
 
+[node name="LivesLabel" type="Label" parent="." unique_id=777100001]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 682.0
+offset_right = 300.0
+offset_bottom = 720.0
+theme_override_fonts/font = ExtResource("2_2jm3i")
+theme_override_font_sizes/font_size = 28
+text = "❤ ❤ ❤"
+
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]

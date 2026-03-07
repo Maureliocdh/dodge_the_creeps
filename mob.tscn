@@ -3,26 +3,32 @@
 [ext_resource type="Script" uid="uid://cypxpb8arjrqt" path="res://mob.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bx2m0x7dnkpiy" path="res://art/zombie1.png" id="2_ubaqv"]
 [ext_resource type="Texture2D" uid="uid://bdtjj24vquccl" path="res://art/zombie.png" id="3_p11y5"]
+[ext_resource type="Texture2D" uid="uid://dun74wipekpfq" path="res://art/enemyFlyingAlt_1.png" id="4_fly1"]
+[ext_resource type="Texture2D" uid="uid://vusf51hepduk" path="res://art/enemyFlyingAlt_2.png" id="5_fly2"]
+[ext_resource type="Texture2D" uid="uid://d182mv7y80xqy" path="res://art/enemySwimming_1.png" id="6_swm1"]
+[ext_resource type="Texture2D" uid="uid://dmgglhdyowipd" path="res://art/enemySwimming_2.png" id="7_swm2"]
+[ext_resource type="Texture2D" uid="uid://dgwhuvn7qb4iy" path="res://art/enemyWalking_1.png" id="8_wlk1"]
+[ext_resource type="Texture2D" uid="uid://dyw702efe6meu" path="res://art/enemyWalking_2.png" id="9_wlk2"]
 
 [sub_resource type="SpriteFrames" id="1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ubaqv")
+"texture": ExtResource("4_fly1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_p11y5")
+"texture": ExtResource("5_fly2")
 }],
 "loop": true,
 "name": &"fly",
-"speed": 3.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ubaqv")
+"texture": ExtResource("6_swm1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_p11y5")
+"texture": ExtResource("7_swm2")
 }],
 "loop": true,
 "name": &"swim",
@@ -30,14 +36,25 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("8_wlk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wlk2")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_ubaqv")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_p11y5")
 }],
 "loop": true,
-"name": &"walk",
-"speed": 4.0
+"name": &"zombie",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="2"]

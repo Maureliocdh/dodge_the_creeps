@@ -2,8 +2,12 @@ extends Area2D
 
 signal hit
 @export var bullet_scene: PackedScene
-@export var speed = 400 # How fast the player will move (pixels/sec).
-var screen_size # Size of the game window.
+@export var speed = 400
+var screen_size
+
+var invincible = false
+var has_shield = false
+var speed_boost_active = false
 
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -11,7 +15,7 @@ func _ready():
 
 
 func _process(delta):
-	var velocity = Vector2.ZERO # The player's movement vector.
+	var velocity = Vector2.ZERO
 	if Input.is_action_pressed(&"move_right"):
 		velocity.x += 1
 	if Input.is_action_pressed(&"move_left"):
@@ -41,38 +45,81 @@ func _process(delta):
 			rotation = PI
 		else:
 			rotation = 0
-			
+
 	if Input.is_action_just_pressed("ui_accept"):
 		shoot()
+
 
 func shoot():
 	if bullet_scene:
 		var bala = bullet_scene.instantiate()
 		get_parent().add_child(bala)
 		bala.position = position
-		
-		# Usamos la rotación actual del jugador para calcular la dirección
-		# Vector2.UP.rotated(rotation) toma el vector "arriba" y lo gira lo que diga el jugador
 		var spawn_direction = Vector2.UP.rotated(rotation)
-		
-		# Si el personaje está mirando a la izquierda (flip_h), forzamos dirección izquierda
 		if $AnimatedSprite2D.animation == &"right" and $AnimatedSprite2D.flip_h:
 			spawn_direction = Vector2.LEFT
 		elif $AnimatedSprite2D.animation == &"right" and not $AnimatedSprite2D.flip_h:
 			spawn_direction = Vector2.RIGHT
-
 		bala.direction = spawn_direction
-		# Rotamos la bala para que apunte a donde va
 		bala.rotation = spawn_direction.angle() + PI/2
+
 
 func start(pos):
 	position = pos
 	rotation = 0
+	invincible = false
+	speed_boost_active = false
+	speed = 400
+	modulate = Color(1, 1, 1)
+	$AnimatedSprite2D.modulate.a = 1.0
 	show()
 	$CollisionShape2D.disabled = false
 
 
+func respawn(pos):
+	position = pos
+	rotation = 0
+	show()
+	$CollisionShape2D.set_deferred(&"disabled", false)
+	invincible = true
+	# Parpadeo de invencibilidad durante 2 segundos
+	var tween = create_tween().set_loops(10)
+	tween.tween_property($AnimatedSprite2D, "modulate:a", 0.15, 0.1)
+	tween.tween_property($AnimatedSprite2D, "modulate:a", 1.0, 0.1)
+	await get_tree().create_timer(2.0).timeout
+	invincible = false
+	$AnimatedSprite2D.modulate.a = 1.0
+
+
+func activate_shield():
+	has_shield = true
+	$ShieldSprite.show()
+
+
+func desactivate_shield():
+	has_shield = false
+	$ShieldSprite.hide()
+
+
+func activate_speed_boost():
+	if speed_boost_active:
+		return
+	speed_boost_active = true
+	speed = 800
+	modulate = Color(1.0, 1.0, 0.3)
+	# Partícula de velocidad
+	var tween = create_tween()
+	tween.tween_interval(5.0)
+	tween.tween_callback(func():
+		speed = 400
+		speed_boost_active = false
+		modulate = Color(1, 1, 1)
+	)
+
+
 func _on_body_entered(_body):
+	if invincible:
+		return
 	if has_shield:
 		desactivate_shield()
 		_body.queue_free()
@@ -80,17 +127,4 @@ func _on_body_entered(_body):
 		hide()
 		hit.emit()
 		$CollisionShape2D.set_deferred(&"disabled", true)
-	
 
-var has_shield = false
-
-func activate_shield():
-	has_shield = true
-	$ShieldSprite.show()
-	
-func desactivate_shield():
-	has_shield = false	
-	$ShieldSprite.hide()
-	
-	
-	
