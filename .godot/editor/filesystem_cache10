@@ -1,18 +1,18 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772251584
-export_presets.cfg::TextFile::-1::1772251584::0::1::::<><><>0<>0<><>::
-hud.gd::GDScript::194471105334324705::1771098031::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::4149710412387755562::1771651507::0::1::::<><><>0<>0<><>::uid://c1g57034r2c0::::res://hud.gd<>uid://bgv586r20ps8e::::res://fonts/Xolonium-Regular.ttf
-icon.webp::CompressedTexture2D::7531548479175478893::1771098031::1771098159::1::::<><><>0<>0<>89dbd4114660f33d244eb0b1cb007814<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
-main.gd::GDScript::6854943129266487135::1771711981::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::2820547996718400564::1772251151::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://dsiy3rq0pmusk::::res://shield_item.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
-mob.gd::GDScript::6489762662277065615::1771098031::0::1::::<>RigidBody2D<><>0<>0<><>::
-mob.tscn::PackedScene::4803497694852229190::1772250822::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://bx2m0x7dnkpiy::::res://art/zombie1.png<>uid://bdtjj24vquccl::::res://art/zombie.png
-player.gd::GDScript::2214551732908234285::1772250732::0::1::::<>Area2D<><>0<>0<><>::
-player.tscn::PackedScene::3945712224003678091::1772249930::0::1::::<><><>0<>0<><>::uid://6s0lxctks3qn::::res://player.gd<>uid://bmn6ic7b4jt38::::res://art/player1.png<>uid://b52sv8h3n1gyj::::res://bala.tscn<>uid://c07m2v4gxttfi::::res://art/player2.png<>uid://di2emys8m0dnb::::res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png
-bala.tscn::PackedScene::4548956345110265265::1772250906::0::1::::<><><>0<>0<><>::uid://d3kncqgyqxlvv::::res://bala.gd<>uid://be8lyb41h4e31::::res://art/unnamed__2_-removebg-preview.png
+::res://::1772919102
 bala.gd::GDScript::9145987193733759299::1772250903::0::1::::<>Area2D<><>0<>0<><>::
-shield_item.gd::GDScript::6728057773318496616::1771696698::0::1::::<>Area2D<><>0<>0<><>::
+bala.tscn::PackedScene::4548956345110265265::1772250906::0::1::::<><><>0<>0<><>::uid://d3kncqgyqxlvv::::res://bala.gd<>uid://be8lyb41h4e31::::res://art/unnamed__2_-removebg-preview.png
+export_presets.cfg::TextFile::-1::1772252958::0::1::::<><><>0<>0<><>::
+hud.gd::GDScript::194471105334324705::1772919038::0::1::::<>CanvasLayer<><>0<>0<><>::
+hud.tscn::PackedScene::4149710412387755562::1772919038::0::1::::<><><>0<>0<><>::uid://c1g57034r2c0::::res://hud.gd<>uid://bgv586r20ps8e::::res://fonts/Xolonium-Regular.ttf
+icon.webp::CompressedTexture2D::7531548479175478893::1771098031::1771098159::1::::<><><>0<>0<>89dbd4114660f33d244eb0b1cb007814<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
+main.gd::GDScript::6854943129266487135::1772919038::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::2820547996718400564::1772919038::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://dsiy3rq0pmusk::::res://shield_item.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
+mob.gd::GDScript::6489762662277065615::1772918905::0::1::::<>RigidBody2D<><>0<>0<><>::
+mob.tscn::PackedScene::4803497694852229190::1772918905::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://bx2m0x7dnkpiy::::res://art/zombie1.png<>uid://bdtjj24vquccl::::res://art/zombie.png<>uid://dun74wipekpfq::::res://art/enemyFlyingAlt_1.png<>uid://vusf51hepduk::::res://art/enemyFlyingAlt_2.png<>uid://d182mv7y80xqy::::res://art/enemySwimming_1.png<>uid://dmgglhdyowipd::::res://art/enemySwimming_2.png<>uid://dgwhuvn7qb4iy::::res://art/enemyWalking_1.png<>uid://dyw702efe6meu::::res://art/enemyWalking_2.png
+player.gd::GDScript::2214551732908234285::1772919038::0::1::::<>Area2D<><>0<>0<><>::
+player.tscn::PackedScene::3945712224003678091::1772249930::0::1::::<><><>0<>0<><>::uid://6s0lxctks3qn::::res://player.gd<>uid://bmn6ic7b4jt38::::res://art/player1.png<>uid://b52sv8h3n1gyj::::res://bala.tscn<>uid://c07m2v4gxttfi::::res://art/player2.png<>uid://di2emys8m0dnb::::res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png
+shield_item.gd::GDScript::6728057773318496616::1772919038::0::1::::<>Area2D<><>0<>0<><>::
 shield_item.tscn::PackedScene::8440684387422345646::1771695636::0::1::::<><><>0<>0<><>::uid://c24eemullfv4c::::res://shield_item.gd<>uid://di2emys8m0dnb::::res://art/Gemini_Generated_Image_pjhk0ypjhk0ypjhk-removebg-preview.png
 ::res://art/::1772248836
 enemy.webp::CompressedTexture2D::3201123376184399409::1771376099::1771376100::1::::<><><>0<>0<>fa48f130b645994508f6a3a375f06941<>res://.godot/imported/enemy.webp-25b006d01d68500b3d75d7be96a3851d.ctex::
@@ -38,7 +38,7 @@ zombie.png::CompressedTexture2D::2636774380920471895::1771650198::1771650210::1:
 FONTLOG.txt::TextFile::-1::1771098031::0::1::::<><><>0<>0<><>::
 LICENSE.txt::TextFile::-1::1771098031::0::1::::<><><>0<>0<><>::
 Xolonium-Regular.ttf::FontFile::2852787775084712022::1771098031::1771098159::1::::<><><>0<>0<>8c2ab1ff5bef22361d2c83fdd500a4d3<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
-::res://web_buiding/::1772251584
-index.apple-touch-icon.png::CompressedTexture2D::5345285248163599351::1772251584::1772251591::1::::<><><>0<>0<>b529a79c2d898ac667e7a8602510824a<>res://.godot/imported/index.apple-touch-icon.png-85657fe73e1db032896b81310a207b4d.ctex::
-index.icon.png::CompressedTexture2D::1014843987973261459::1772251583::1772251591::1::::<><><>0<>0<>3b45e40ff6c179b8733cd91549a51182<>res://.godot/imported/index.icon.png-56703ed7e90199a59a9b757af4ba2436.ctex::
-index.png::CompressedTexture2D::2806686950724044054::1772251583::1772251591::1::::<><><>0<>0<>3c935e3ee31e29b82915dc7f4903cda1<>res://.godot/imported/index.png-02ac2245f986d72e84d4e277fbd1225d.ctex::
+::res://web_buiding/::1772252988
+index.apple-touch-icon.png::CompressedTexture2D::5345285248163599351::1772252958::1772251591::1::::<><><>0<>0<>b529a79c2d898ac667e7a8602510824a<>res://.godot/imported/index.apple-touch-icon.png-85657fe73e1db032896b81310a207b4d.ctex::
+index.icon.png::CompressedTexture2D::1014843987973261459::1772252958::1772251591::1::::<><><>0<>0<>3b45e40ff6c179b8733cd91549a51182<>res://.godot/imported/index.icon.png-56703ed7e90199a59a9b757af4ba2436.ctex::
+index.png::CompressedTexture2D::2806686950724044054::1772252958::1772251591::1::::<><><>0<>0<>3c935e3ee31e29b82915dc7f4903cda1<>res://.godot/imported/index.png-02ac2245f986d72e84d4e277fbd1225d.ctex::

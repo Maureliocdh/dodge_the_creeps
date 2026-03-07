@@ -39,7 +39,7 @@ func _setup_background_fx():
 	embers.amount = 55
 	embers.lifetime = 9.0
 	embers.speed_scale = 0.9
-	embers.emission_shape = CPUParticles2D.EMISSION_SHAPE_BOX
+	embers.emission_shape = CPUParticles2D.EMISSION_SHAPE_RECTANGLE
 	embers.emission_rect_extents = Vector2(240, 2)
 	embers.direction = Vector2(0.15, 1.0)
 	embers.spread = 20.0
@@ -247,4 +247,3 @@ func _on_player_hit() -> void:
 		$HUD.show_message("❤ " + str(lives) + " vidas")
 		await get_tree().create_timer(0.4).timeout
 		$Player.respawn($StartPosition.position)
-

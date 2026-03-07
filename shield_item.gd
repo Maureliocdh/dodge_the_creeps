@@ -19,4 +19,3 @@ func _on_area_entered(area):
 		if main.has_method("play_powerup_sound"):
 			main.play_powerup_sound()
 		queue_free()
-

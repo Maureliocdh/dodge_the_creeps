@@ -1,7 +1,3 @@
-res://main.tscn
-res://bala.tscn
-res://bala.gd
-res://player.gd
-res://player.tscn
-res://mob.tscn
 res://main.gd
+res://player.gd
+res://shield_item.gd
