@@ -9,6 +9,9 @@ var invincible = false
 var has_shield = false
 var speed_boost_active = false
 
+var _shoot_cooldown := 0.0
+const SHOOT_RATE := 0.18  # segundos entre disparos
+
 func _ready():
 	screen_size = get_viewport_rect().size
 	hide()
@@ -46,8 +49,10 @@ func _process(delta):
 		else:
 			rotation = 0
 
-	if Input.is_action_just_pressed("ui_accept"):
+	_shoot_cooldown -= delta
+	if Input.is_action_pressed("ui_accept") and _shoot_cooldown <= 0.0:
 		shoot()
+		_shoot_cooldown = SHOOT_RATE
 
 
 func shoot():
